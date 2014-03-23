@@ -1,0 +1,46 @@
+doctype html
+html(ng-app='demoAPI')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    title Angular-REST-API
+    link(rel='stylesheet', href='http://yui.yahooapis.com/pure/0.4.2/pure-min.css')
+    script(src='http://yui.yahooapis.com/3.14.1/build/yui/yui-min.js')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular.min.js')
+    script(src='javascripts/main.js')
+    link(rel='stylesheet', href='stylesheets/main.css')
+  body(ng-controller='mainController')
+    .header
+      .home-menu.pure-menu.pure-menu-open.pure-menu-horizontal.pure-menu-fixed
+        ul
+          li.pure-menu-selected
+            a(href='#') Home
+          li
+            a(href='#') Foo
+          li
+            a(href='#') Bar
+      #main
+        .header
+          h1 Analytics
+          h2 for the past three months
+          <br>
+          <br>
+        <br>
+        .content
+          .pure-g
+            <br>
+            .pure-u-1-4
+              h2 Total Campains
+              h3 {{campaigns}}
+            .pure-u-1-4
+              h2 Foo Bar
+              h3 Foo Bar
+            .pure-u-1-4
+              h2 Foo Bar
+              h3 Foo Bar
+            .pure-u-1-4
+              h2 Foo Bar
+              h3 Foo Bar
+
